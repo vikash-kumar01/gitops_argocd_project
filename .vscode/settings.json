@@ -1,0 +1,17 @@
+{
+    "jenkins-runner.jobs": {
+        "gitops-argocd_CI": {
+            "isDefault": true,
+            "runWith": "jenkins-master",
+            "name": "gitops-argocd_CI"
+    }
+   },
+   "jenkins-runner.hostConfigs": {
+    "jenkins-master": {
+        "url": "http://50.19.171.233:8080",
+        "user": "vikash",
+        "password": "vikash",
+        "useCrumbIssuer": true,
+    }
+   }
+}
