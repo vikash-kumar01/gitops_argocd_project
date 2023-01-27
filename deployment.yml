@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: flask-app-deploy
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: flask-app
@@ -13,10 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-app-container
-        image:  vikashashoke/gitops-argo-app:v1
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+        image: vikashashoke/gitops-argo-app:v1
         ports:
         - containerPort: 5000
