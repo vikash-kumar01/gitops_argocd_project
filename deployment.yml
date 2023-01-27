@@ -13,7 +13,7 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-app-container
+      - name: flask-app
         image: vikashashoke/gitops-argocd:v1
         ports:
         - containerPort: 5000
